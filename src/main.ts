@@ -30,5 +30,3 @@ app.use(router)
 app.use(pinia)
 
 app.mount('#app')
-// @ts-ignore
-console.log(process.env.NODE_ENV)
