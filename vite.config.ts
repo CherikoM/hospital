@@ -26,9 +26,7 @@ export default defineConfig({
     }),
     DefineOptions()
   ],
-  build: {
-    outDir: "./nginx/dist"
-  },
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, 'src')
@@ -42,36 +40,10 @@ export default defineConfig({
     open: true,
     // 开发环境跨域
     proxy: {
-      "/8201": {
-        target: "http://139.198.34.216:8201",
+      "/api": {
+        target: "http://syt.atguigu.cn/",
         changeOrigin: true,
-        rewrite: (path)=> path.replace(/^\/8201/, "")
-      },
-      "/8202": {
-        target: "http://139.198.34.216:8202",
-        changeOrigin: true,
-        rewrite: (path)=> path.replace(/^\/8202/, "")
-      },
-      "/8203": {
-        target: "http://139.198.34.216:8203",
-        changeOrigin: true,
-        rewrite: (path)=> path.replace(/^\/8203/, "")
-      },
-      "/8204": {
-        target: "http://139.198.34.216:8204",
-        changeOrigin: true,
-        rewrite: (path)=> path.replace(/^\/8204/, "")
-      },
-      "/8205": {
-        target: "http://139.198.34.216:8205",
-        changeOrigin: true,
-        rewrite: (path)=> path.replace(/^\/8205/, "")
-      },
-      "/8206": {
-        target: "http://139.198.34.216:8206",
-        changeOrigin: true,
-        rewrite: (path)=> path.replace(/^\/8206/, "")
-      },
+      }
     }
   }
 })

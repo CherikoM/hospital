@@ -4,19 +4,19 @@ import { SubmitOrderResponseData, UserOrderResponseData, CancelOrderResponseData
 
 enum API {
   // 提交订单
-  SUBMIT_ORDER_URL = "/8206/api/order/orderInfo/auth/submitOrder/",
+  SUBMIT_ORDER_URL = "/order/orderInfo/auth/submitOrder/",
   // 获取订单详情
-  GET_ORDER_INFO_URL = "/8206/api/order/orderInfo/auth/getOrderInfo/",
+  GET_ORDER_INFO_URL = "/order/orderInfo/auth/getOrderInfo/",
   // 取消订单
-  CANCEL_ORDER_URL = "/8206/api/order/orderInfo/auth/cancelOrder/",
+  CANCEL_ORDER_URL = "/order/orderInfo/auth/cancelOrder/",
   // 获取订单支付二维码
-  GET_ORDER_QR_CODE_URL = "/8206/api/order/weixin/createNative/",
+  GET_ORDER_QR_CODE_URL = "/order/weixin/createNative/",
   // 查询订单支付结果
-  GET_ORDER_PAY_RESULT_URL = "/8206/api/order/weixin/queryPayStatus/",
+  GET_ORDER_PAY_RESULT_URL = "/order/weixin/queryPayStatus/",
   // 查询所有订单
-  GET_ALL_ORDER_URL = "/8206/api/order/orderInfo/auth/",
+  GET_ALL_ORDER_URL = "/order/orderInfo/auth/",
   // 查询所有订单中包含的订单状态
-  GET_ORDER_STATUS_URL = "/8206/api/order/orderInfo/auth/getStatusList/"
+  GET_ORDER_STATUS_URL = "/order/orderInfo/auth/getStatusList/"
 }
 
 // 提交订单

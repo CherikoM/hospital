@@ -4,29 +4,29 @@ import { UserCodeResponseData, LoginData, UserLoginResponseData, WxLoginResponse
 
 enum API {
   // 用户请求验证码
-  GET_USER_CODE = "/8204/api/sms/send/",
+  GET_USER_CODE = "/sms/send/",
   // 用户登录
-  USER_LOGIN_URL = "/8203/api/user/login",
+  USER_LOGIN_URL = "/user/login",
   // 获取微信扫码登录参数
-  WX_LOGIN_URL = "/8203/api/user/weixin/getLoginParam/",
+  WX_LOGIN_URL = "/user/weixin/getLoginParam/",
   // 获取该账号的就诊人信息
-  GET_USER_CLIENT_URL = "/8203/api/user/patient/auth/findAll",
+  GET_USER_CLIENT_URL = "/user/patient/auth/findAll",
   // 提交订单
-  SUBMIT_ORDER_URL = "/8206/api/order/orderInfo/auth/submitOrder/",
+  SUBMIT_ORDER_URL = "/order/orderInfo/auth/submitOrder/",
   // 获取订单详情
-  GET_ORDER_INFO_URL = "/8206/api/order/orderInfo/auth/getOrderInfo/",
+  GET_ORDER_INFO_URL = "/order/orderInfo/auth/getOrderInfo/",
   // 获取用户实名认证信息
-  GET_USER_REAL_NAME_URL = "/8203/api/user/auth/getUserInfo/",
+  GET_USER_REAL_NAME_URL = "/user/auth/getUserInfo/",
   // 用户实名认证
-  USER_CERTATION_URL = "/8203/api/user/auth/userAuah/",
+  USER_CERTATION_URL = "/user/auth/userAuah/",
   // 获取省市县
-  GET_ADDRESS_URL = "/8202/api/cmn/dict/findByParentId/",
+  GET_ADDRESS_URL = "/cmn/dict/findByParentId/",
   // 添加就诊人
-  ADD_USER_CLIENT_URL = "/8203/api/user/patient/auth/save/",
+  ADD_USER_CLIENT_URL = "/user/patient/auth/save/",
   // 修改就诊人
-  UPDATE_USER_CLIENT_URL = "/8203/api/user/patient/auth/update/",
+  UPDATE_USER_CLIENT_URL = "/user/patient/auth/update/",
   // 删除就诊人
-  DELETE_USER_CLIENT_URL = "/8203/api/user/patient/auth/remove/"
+  DELETE_USER_CLIENT_URL = "/user/patient/auth/remove/"
 }
 
 export const reqUserCode = 

@@ -5,11 +5,11 @@ import type { HospitalResponseData, HospitalSearchResponseData, HospitalTagRespo
 // 枚举管理首页接口地址
 enum API {
   // 医院列表（分页）
-  HOSPITAL_URL = "/8201/api/hosp/hospital/",
+  HOSPITAL_URL = "/hosp/hospital/",
   // 医院标签筛选
-  HOSPITAL_TAG_URL = "/8202/api/cmn/dict/findByDictCode/",
+  HOSPITAL_TAG_URL = "/cmn/dict/findByDictCode/",
   // 根据关键字获取医院名
-  HOSPITAL_SEARCH_URL = "/8201/api/hosp/hospital/findByHosname/"
+  HOSPITAL_SEARCH_URL = "/hosp/hospital/findByHosname/"
 }
 
 // 获取医院数据

@@ -9,7 +9,8 @@ import useUserStore from "@/store/modules/user"
 
 // 创建axios实例
 const request = axios.create({
-  // baseURL: "/api",    // 基础路径
+  // @ts-ignore
+  baseURL: process.env.BASE_URL,    // 基础路径
   timeout: 5000   // 超时时间
 })
 

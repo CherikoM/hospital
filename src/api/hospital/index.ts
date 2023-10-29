@@ -4,15 +4,15 @@ import { HospitalDepartmentResponseData, HospitalDetailResponseData, HospitalReg
 
 enum API {
   // 获取医院详情信息
-  HOSPITAL_DETAIL_URL = "/8201/api/hosp/hospital/",
+  HOSPITAL_DETAIL_URL = "/hosp/hospital/",
   // 获取医院科室
-  HOSPITAL_DEPARTMENT_URL = "/8201/api/hosp/hospital/department/",
+  HOSPITAL_DEPARTMENT_URL = "/hosp/hospital/department/",
   // 获取医院科室挂号数据
-  HOSPITAL_REG_INFO_URL = "/8201/api/hosp/hospital/auth/getBookingScheduleRule/",
+  HOSPITAL_REG_INFO_URL = "/hosp/hospital/auth/getBookingScheduleRule/",
   // 获取医院某科室当日挂号医生数据
-  HOSPITAL_REG_DOCTOR_URL = "/8201/api/hosp/hospital/auth/findScheduleList/",
+  HOSPITAL_REG_DOCTOR_URL = "/hosp/hospital/auth/findScheduleList/",
   // 获取挂号医生的信息
-  HOSPITAL_DOCTOR_URL = "/8201/api/hosp/hospital/getSchedule/"
+  HOSPITAL_DOCTOR_URL = "/hosp/hospital/getSchedule/"
 }
 
 export const reqHospitalDetail = 
