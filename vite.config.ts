@@ -26,7 +26,9 @@ export default defineConfig({
     }),
     DefineOptions()
   ],
-
+  build: {
+    outDir: "./nginx/dist"
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, 'src')
