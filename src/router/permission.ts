@@ -14,7 +14,7 @@ const whiteList = ["/home", "/hospital/register", "/hospital/detail", "/hospital
 
 // 添加全局守卫
 // 前置
-router.beforeEach((to, from, next)=> {
+router.beforeEach((to, _, next)=> {
   nprogress.start()
   const token = userStore.userInfo.token
   if(token && token !== "") {
@@ -34,7 +34,7 @@ router.beforeEach((to, from, next)=> {
 })
 
 // 后置
-router.afterEach((to, from)=> {
+router.afterEach((to, _)=> {
   document.title = `京医通 ${to.meta.title as string}`
   nprogress.done()
 })

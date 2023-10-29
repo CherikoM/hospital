@@ -1,9 +1,13 @@
 # deploy.sh
+
+# 删除dist, 否则第二次会提示fatal: A branch named 'main' already exists.
+rm -rf dist
+
 # 错误时停止
 set -e
 
 # 1、打包
-pnpm build
+npm run build
 
 # 2、进入目标文件夹，这里跟项目打包输出的文件夹相同（如果项目中不修改默认为：dist）
 cd dist

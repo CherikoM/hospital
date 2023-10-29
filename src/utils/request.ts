@@ -57,6 +57,7 @@ request.interceptors.response.use(
       case 504:
       case 505:
         ElMessage.error(error.code + "，服务器错误")
+        break
       default:
         break
     }
