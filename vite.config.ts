@@ -10,6 +10,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV==="production"?"/hospital/":"",
   plugins: [
     vue(),
     // element+

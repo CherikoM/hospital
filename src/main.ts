@@ -18,7 +18,6 @@ import HospitalBottom from "@/components/HospitalBottom/index.vue"
 import Login from "@/components/login/index.vue"
 import ClientList from "@/components/clientList/index.vue"
 
-
 const app = createApp(App)
 
 // 挂载全局组件
@@ -31,3 +30,5 @@ app.use(router)
 app.use(pinia)
 
 app.mount('#app')
+// @ts-ignore
+console.log(process.env.NODE_ENV)
