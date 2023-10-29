@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "lib": ["ES2015", "DOM"]
+  },
+  "include": ["vite.config.ts", "plugins/**/*"]
+}
