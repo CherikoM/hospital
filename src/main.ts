@@ -31,3 +31,4 @@ app.use(pinia)
 
 app.mount('#app')
 
+console.log(import.meta.env.NODE_ENV)
