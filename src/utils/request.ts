@@ -10,7 +10,7 @@ import useUserStore from "@/store/modules/user"
 // 创建axios实例
 const request = axios.create({
   // @ts-ignore
-  baseURL: import.meta.env.NODE_ENV==="production"? "http://syt.atguigu.cn/api": "api",    // 基础路径
+  baseURL: import.meta.env.NODE_ENV === "production"? "http://syt.atguigu.cn/api": "/api",   // 基础路径
   timeout: 5000   // 超时时间
 })
 
