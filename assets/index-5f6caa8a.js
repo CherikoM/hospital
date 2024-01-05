@@ -1,0 +1,1 @@
+import{aL as o}from"./index-4bab59ba.js";const h=t=>o.get("/hosp/hospital/"+t),i=t=>o.get("/hosp/hospital/department/"+t),l=(t,e,s,a)=>o.get(`/hosp/hospital/auth/getBookingScheduleRule/${t}/${e}/${s}/${a}`),r=(t,e,s)=>o.get(`/hosp/hospital/auth/findScheduleList/${t}/${e}/${s}`),c=t=>o.get("/hosp/hospital/getSchedule/"+t);export{i as a,l as b,r as c,c as d,h as r};

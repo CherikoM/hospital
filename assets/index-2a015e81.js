@@ -1,0 +1,1 @@
+import{h as e,aw as n,co as s,t as a,F as r}from"./index-4bab59ba.js";const c=e({name:"WXLogin"}),i=e({...c,setup(l){const t=n();s(JSON.stringify(t.query));let o=document.querySelector("html");return o.style.display="none",(u,_)=>(a(),r("div"))}});export{i as default};
