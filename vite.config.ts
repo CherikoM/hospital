@@ -41,7 +41,7 @@ export default defineConfig({
     // 开发环境跨域
     proxy: {
       "/api": {
-        target: "http://syt.atguigu.cn/",
+        target: "https://syt.atguigu.cn/",
         changeOrigin: true,
       }
     }
